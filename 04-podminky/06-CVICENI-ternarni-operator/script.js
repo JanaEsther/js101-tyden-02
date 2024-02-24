@@ -43,7 +43,7 @@ Nechte uživatele zadat barvu. Použijte ternární operátor
 a do konzoly vypište “Tuhle barvu mám taky rád”, pokud se
 jedná o zelenou nebo modrou. Pro jakoukoliv jinou barvu napište “To není moje oblíbená barva”.
 */
-barva = prompt('Zadej svou oblíbenou barvu:\n')
+const barva = prompt('Zadej svou oblíbenou barvu:\n')
 console.log(barva == 'modrá'|| barva == 'zelená' ? 'Tuhle barvu mám taky rád': 'To není moje oblíbená barva.');
 
 
@@ -59,4 +59,6 @@ Nechte uživatele zadat telefonní číslo včetně mezinárodní předvolby
 Jinak raději použijte mezinárodní pozdrav “Hello. How are you.”
 */
 
+const telefon = prompt('Zadej telefonní číslo včetně předvolby ve tvaru +XXX XXX XXX:\n')
+console.log( telefon.slice(0,4) === "+420"||"+421" ? 'Jé, ty jsi taky čechoslovák': 'Hello. How are you?');
 
