@@ -204,7 +204,7 @@ const Vyber = Number(prompt('Kolik chceš vybrat peněz?\n'));
 
 /*
 Cvičení 11: Pobyt na měsící pro mezinárodní klienty 🚀
-Vycházejte ze stejného předpokladu, jako ve cvičení 3. 
+Vycházejte ze stejného předpokladu, jako ve cvičení 8. 
 Tentokrát ale máte na měsíci hotel a přijde za vámi host a ptá se 
 “Venku je 64 stupňů. Mám si vzít kraťasy nebo raději skafandr?” 
 Bohužel jsou mezi hosty i američani, a vy nevíte, zda vám host 
@@ -219,3 +219,21 @@ musíte ji nejprve převést na stupně Celsia. Vzorec pro převod je `celsius =
 
 Pohybuje-li se teplota mezi 20°C a 38°C, doporučíte kraťasy a tričko 🩳, jinak skafandr 👩‍🚀.
 */
+
+let teplota1 = prompt('Jaká je venku teplota?\n');
+const stupne = prompt('Pro stupně Celsia zadej C a pro stupně Fahrenheita zadej F.\n')
+if (stupne == 'F') {
+    teplota1 =  (teplota1 - 32) * 0.5556}
+    if (teplota1 >= 20 && teplota1 <= 38) {
+    console.log(`Teplota venku je ${teplota1.toFixed(0)}°C, akorát na kraťasy a na tričko.`);
+    } else{
+    console.log(`Teplota venku je  ${teplota1.toFixed(0)}°C, obleč si scafandr.`);
+}
+
+
+
+
+/*to Fixed - metoda objektu Number, která formátuje číslo pomocí pevného počtu desetinných míst. Tato metoda vrací řetězec, který reprezentuje 
+dané číslo s přesně zadaným počtem číslic za desetinnou čárkou. number.toFixed(x)
+x je volitelný parametr, který určuje počet desetinných míst. Výchozí hodnota je 0 (žádná desetinná místa).
+ */
