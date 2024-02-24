@@ -22,5 +22,8 @@ console.log(napoj);
 
 
 // ternární operátor lze použít i uvnitř jiných výrazů
-const maRidicak = false;
+let maRidicak = false;
+maRidicak = true;
 console.log(`Alena pojede ${ maRidicak ? 'autem' : 'raději na kole' }.`);
+
+//Výhodou je, že je to výraz, který sám o sobě vrací hodnotu a může být součástí dalších výrazů.

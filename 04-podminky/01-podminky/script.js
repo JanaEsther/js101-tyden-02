@@ -8,7 +8,7 @@ if (podmínka) {
 }
 */
 
-let vek = 19;
+let vek = 16;
 
 if (vek >= 18) {
   console.log('Můžeš do sekce pro dospělé');
@@ -42,7 +42,9 @@ if (vek >= 65) {
 console.log(kategorie);
 
 
+
 // vnořené podmínky
+věk = 50;
 if (vek >= 65) {
   console.log('Jsi v důchodu a už máš pohodu');
 } else {

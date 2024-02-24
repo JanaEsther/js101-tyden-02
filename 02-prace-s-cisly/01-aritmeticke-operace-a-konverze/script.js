@@ -24,6 +24,7 @@ console.log( '(4 + 3) * 2 je', (4 + 3) * 2 );
 // Konverze textu na čísla
 // celá čísla pomocí parseInt()
 console.log( parseInt('123') );       // výsledek: 123
+console.log(parseInt('1235647'));
 console.log( parseInt('123abc') );    // výsledek: 123
 console.log( parseInt('abc123') );    // výsledek: NaN
 console.log( parseInt('1.23') );      // výsledek: 1
@@ -44,3 +45,5 @@ console.log( Number('1,23') );        // výsledek: NaN
 console.log( Number('123abc') );      // výsledek: NaN
 console.log( Number('abc123') );      // výsledek: NaN
 console.log( Number('abc') );         // výsledek: NaN
+
+

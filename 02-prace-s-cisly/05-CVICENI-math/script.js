@@ -5,6 +5,11 @@ Cvičení 1: Obsah kruhu
 Nechte uživatele pomocí `prompt()` zadat poloměr kruhu. Výsledek si uložte do proměnné `r`. Spočitejte a do konzoly vypište, jaký je obsah kruhu.
 Vzorec pro obsah kruhu je πr^2 (pí * r na druhou).
 */
+//let polomer = Number(prompt('Zadej poloměr.'));
+//let r = polomer;
+//r = polomer;
+//let obsah = Math.round(Math.PI *r**2);25
+//console.log (obsah);
 
 
 
@@ -15,6 +20,14 @@ Zjistětě nejmenší a největší číslo ze všech tří a vypište do konzol
 Nejmenší číslo je [x].
 Největší číslo je [y].
 */
+//let number1 = prompt('Zadej číslo');
+//let number2 = prompt('Zadej cislo');
+//let number3 = prompt('Zadej cislo');12254
+
+//const nejmensi = Math.min(number1, number2, number3);
+//console.log('Nejmenší číslo je', nejmensi);
+//const nejvetsi = Math.max(number1, number2, number3);
+//console.log('Největší číslo je', nejvetsi);
 
 
 
@@ -26,6 +39,8 @@ Napište program, který vygeneruje náhodný hod touto kostkou a do konzoly vyp
 Na D12 padla hodnota [x].
 */
 const kostka = 12;
+const kostka1 =  Math.round(Math.random() *10);
+console.log('Na D12 padla hodnota', kostka1);
 
 
 
@@ -33,3 +48,5 @@ const kostka = 12;
 Cvičení 4: Náhodné desítky
 Vytvoř program, který vygeneruje a do konzoly vypíše náhodnou desítku - tj. jednu z hodnot 10, 20, 30, 40, … , 90, 100.
 */
+const desitka =  Math.floor((Math.random()*10) + 1) *10;
+console.log('Náhodná desítka je', desitka );

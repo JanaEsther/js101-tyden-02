@@ -7,14 +7,18 @@ Pozor na to, že toLowerCase() a další podobné metody, nemění původní pro
 const text1 = 'sMíŠenÝ TExT';
 text1.toLowerCase();
 console.log(text1);
+console.log(text1.toLowerCase())
+
 // výsledek je stále: sMíŠenÝ TExT
+
 
 
 const text2 = 'Skákal pes přes oves';
 text2.replace('pes', 'kočka');
 console.log(text2);
 // výsledek je stále: Skákal pes přes oves
-
+console.log(text2.replace('pes', 'kočka'));
+console.log(text2.replace('Skákal pes', 'Skákala kočka'));                 
 
 
 // pokud chceme proměnnou změnit,
@@ -32,3 +36,4 @@ console.log(text);
 const jmena = ['Daniela', 'Zuzana', 'Alena'];
 jmena.sort();
 console.log(jmena);
+console.log(jmena[2]);

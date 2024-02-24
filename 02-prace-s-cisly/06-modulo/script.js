@@ -13,6 +13,16 @@ console.log( 7 % 2 );  // výsledek: 1 → číslo je liché
 
 // Konverze vteřin na hodiny, minuty, vteřiny
 const celkemVterin = 8374;
+const hodiny1 = Math.floor(celkemVterin / 3600);
+console.log(hodiny1);
+
+
+const minuty2 = Math.floor((celkemVterin % 3600)/60);
+
+const vteriny2 = celkemVterin % 60;
+
+console.log(hodiny1, minuty2, vteriny2);
+
 // spočítáme, kolik hodin se vejde do celkového počtu vteřin
 // chceme celé hodiny, takže výsledek dělení zaokrouhlíme dolů
 const hodiny = Math.floor(celkemVterin / 3600);
