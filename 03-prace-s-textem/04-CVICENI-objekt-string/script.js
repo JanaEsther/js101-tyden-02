@@ -56,7 +56,8 @@ Tip: Nezapomeňte, že v programování se indexy počítají od nuly, ale lidé
 */
 const text = 'Mě by jenom zajímalo, kde udělali soudruzi z NDR chybu.';
 console.log(text.indexOf('soudruzi'));
-console.log(`Soudruzi začínájí na ${indexSoudruzi + 1}. písmenu.`);
+console.log(`Soudruzi začínají na ${indexOfSoudruzi + 1}. písmenu.`);
+
 
 
 /*
@@ -102,9 +103,28 @@ na začátku. Nemůžeme se tedy spolehnout na to,
 že zadané číslo má vždy konkrétní počet znaků. 
 Musíme vždy odseknout poslední tři znaky z původního čísla 
 a doplnit je zepředu hvězdičkami do původní délky zadaného řetězce.
+Metoda padStart - musí být nad textovým řetězcem - na začátku to chci vyplnit nějakým znakem 
+aby to celé bylo nějak dlouhé.
 */
 
-telefon_cislo = prompt('Zadej telefonní číslo.');
-const skryte_cislo = telefon_cislo.slice(-3).padStart(telefon_cislo.Lenght(), '*');
-console.log(telefon);
+//
+cislo = prompt('Zadej telefonní číslo.');
+const skryte_cislo = cislo.slice(-3).padStart(cislo.length, '*'); //řetězení metod
+//nejprve vyhodnoti proměnnou cislo , je to jakoby tam bylo '736 675 615' a pak z ní vezme poslední tři znaky na které aplikuje padStart
+console.log(cislo);
 console.log(skryte_cislo);
+
+// postupné řešení
+
+let cislo = '736 675 615'
+const delka = cislo.length;
+const posledni = cislo.slice(-3)
+const vysledek = posledni.padStart(delka, '*')
+console.log(vysledek)
+
+
+
+
+
+
+
